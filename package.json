@@ -1,0 +1,27 @@
+{
+  "name": "cypress-cucumber-preproccessor-steps-issue-step-definitions-and-updated-spec-pattern",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Zachary J. Hamm<zjhamm304@gmail.com>",
+  "scripts": {
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:run:A": "cypress run -C cypress.config.A.mjs",
+    "cypress:open:A": "cypress open -C cypress.config.A.mjs",
+    "cypress:run:B": "cypress run -C cypress.config.B.mjs",
+    "cypress:open:B": "cypress open -C cypress.config.B.mjs"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "14.0.1"
+  },
+  "private": false,
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "cypress/e2e/features/stepDefinitions/**/*.{js,mjs,cjs}",
+      "cypress/e2e/features/[filepart]/stepDefinitions/**/*.{js,mjs,cjs}"
+    ]
+  }
+}
