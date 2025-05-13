@@ -1,6 +1,6 @@
 import {Given} from '@badeball/cypress-cucumber-preprocessor'
 
-Given('foo becomes B', function () {
+Given('foo', function () {
     cy.log('foo B')
     this.foo = 'B'
 })
