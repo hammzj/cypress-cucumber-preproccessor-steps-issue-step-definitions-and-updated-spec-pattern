@@ -5,6 +5,7 @@
   "author": "Zachary J. Hamm<zjhamm304@gmail.com>",
   "scripts": {
     "cypress:run": "cypress run",
+    "cypress:run:using-spec-pattern:A": "cypress run --spec \"cypress/e2e/features/a/**/*.feature\"",
     "cypress:open": "cypress open",
     "cypress:run:A": "cypress run -C cypress.config.A.mjs",
     "cypress:open:A": "cypress open -C cypress.config.A.mjs",
