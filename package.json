@@ -8,6 +8,7 @@
     "cypress:run:using-spec-pattern:A": "cypress run --spec \"cypress/e2e/features/a/**/*.feature\"",
     "cypress:open": "cypress open",
     "cypress:run:A": "cypress run -C cypress.config.A.mjs",
+    "cypress:run:A:override-step-defs": "cypress run -C cypress.config.A.mjs -e stepDefinitions=\"[\"cypress/e2e/features/stepDefinitions/**/*.mjs\",\"cypress/e2e/features/a/[filepart]/stepDefinitions/**/*.mjs\"]\"",
     "cypress:open:A": "cypress open -C cypress.config.A.mjs",
     "cypress:run:B": "cypress run -C cypress.config.B.mjs",
     "cypress:open:B": "cypress open -C cypress.config.B.mjs"
