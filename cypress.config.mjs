@@ -23,5 +23,6 @@ export default defineConfig({
         baseUrl: "https://duckduckgo.com",
         specPattern: "**/*.feature",
         setupNodeEvents,
+        env: {}
     },
 });
