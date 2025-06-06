@@ -5,13 +5,13 @@
   "author": "Zachary J. Hamm<zjhamm304@gmail.com>",
   "scripts": {
     "cypress:run": "cypress run",
-    "cypress:run:using-spec-pattern:A": "cypress run --spec \"cypress/e2e/features/a-tests/**/*.feature\"",
     "cypress:open": "cypress open",
-    "cypress:run:A": "cypress run -C cypress.config.a-tests.mjs",
-    "cypress:run:A:override-step-defs": "cypress run -C cypress.config.a-tests.mjs -e stepDefinitions=\"[\"cypress/e2e/features/stepDefinitions/**/*.mjs\",\"cypress/e2e/features/a-tests/[filepart]/stepDefinitions/**/*.mjs\"]\"",
-    "cypress:open:A": "cypress open -C cypress.config.a-tests.mjs",
-    "cypress:run:B": "cypress run -C cypress.config.b-tests.mjs",
-    "cypress:open:B": "cypress open -C cypress.config.b-tests.mjs"
+    "cypress:run:a-tests": "cypress run -C cypress.config.a-tests.mjs",
+    "cypress:run:a-tests:using-spec-pattern": "cypress run --spec \"cypress/e2e/features/a-tests/**/*.feature\"",
+    "cypress:run:a-tests:override-step-defs": "cypress run -C cypress.config.a-tests.mjs -e stepDefinitions=\"[\"cypress/e2e/features/stepDefinitions/**/*.mjs\",\"cypress/e2e/features/a-tests/[filepart]/stepDefinitions/**/*.mjs\"]\"",
+    "cypress:open:a-tests": "cypress open -C cypress.config.a-tests.mjs",
+    "cypress:run:b-tests": "cypress run -C cypress.config.b-tests.mjs",
+    "cypress:open:b-tests": "cypress open -C cypress.config.b-tests.mjs"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
