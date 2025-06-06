@@ -18,7 +18,7 @@ the `specPattern` is changed within the Cypress configuration file.
         * cypress/e2e/b/stepDefinitions/steps.mjs, but is only loaded for features in `features/b/**/*.feature`
     * All feature files should complete successfully.
 
-* When running `cypress:run:A`, the `cypress.config.A.mjs` file is used.
+* When running `cypress:run:A`, the `cypress.config.a-tests.mjs` file is used.
   * Feature files matching this pattern shall be run: `cypress/e2e/features/a/**/*.feature`
   * Steps should be included from these places:
     * cypress/e2e/stepDefinitions/steps.mjs
@@ -26,7 +26,7 @@ the `specPattern` is changed within the Cypress configuration file.
   * All feature files should complete successfully.
 
 
-* When running `cypress:run:B`, the `cypress.config.B.mjs` file is used.
+* When running `cypress:run:B`, the `cypress.config.b-tests.mjs` file is used.
     * Feature files matching this pattern shall be run: `cypress/e2e/features/b/**/*.feature`
     * Steps should be included from these places:
         * cypress/e2e/stepDefinitions/steps.mjs
